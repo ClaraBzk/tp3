@@ -8,15 +8,15 @@ class Profil extends React.Component {
     }
 
     state= {
-        colorbg: "red"
+        colorbg: "violet"
     };
 
     handleClick = (e) => {
-        if (this.state.colorbg==="red"){
-            this.setState({colorbg: "blue"})
+        if (this.state.colorbg==="violet"){
+            this.setState({colorbg: "dodgerblue"})
             console.log(this.state.colorbg)
         }else{
-            this.setState({colorbg: "red"})
+            this.setState({colorbg: "violet"})
         }
     }
 
@@ -33,7 +33,7 @@ class Profil extends React.Component {
                  {this.props.date}
                  </p>
 
-                 <button style={{marginRight: "10px"}} onClick={this.handleClick} > YES </button>
+                 <button style={{marginRight: "10px"}} onClick={this.handleClick} > Change </button>
 
             </div>
         )

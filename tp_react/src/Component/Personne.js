@@ -1,4 +1,5 @@
 import React from 'react';
+import './Personne.css';
 
 class Personne extends React.Component {
     constructor(props){
@@ -7,7 +8,11 @@ class Personne extends React.Component {
 
     render() {
         return (
-            <button>{this.props.data1.prenom}</button>
+            <div className="button">
+
+            <button  onClick={this.props.onClick} >{this.props.data1.prenom}</button>
+
+            </div>
         )
     }
 }
